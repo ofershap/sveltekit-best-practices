@@ -1,0 +1,24 @@
+{
+  "name": "sveltekit-best-practices",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SvelteKit and Svelte 5 done right. Runes ($state, $derived, $effect), load functions, form actions, SSR patterns, and modern Svelte your AI agent should follow.",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": ["sveltekit", "svelte", "svelte5", "runes", "best-practices", "ssr", "cursor-plugin", "claude-code", "ai-agent"],
+  "author": {
+    "name": "Ofer Shapira",
+    "url": "https://github.com/ofershap"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ofershap/sveltekit-best-practices.git"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.0"
+  }
+}

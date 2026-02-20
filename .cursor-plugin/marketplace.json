@@ -1,0 +1,18 @@
+{
+  "name": "sveltekit-best-practices",
+  "owner": {
+    "name": "Ofer Shapira",
+    "email": "ofer@shapira.dev"
+  },
+  "metadata": {
+    "description": "SvelteKit and Svelte 5 done right. Runes ($state, $derived, $effect), load functions, form actions, SSR patterns, and modern Svelte your AI agent should follow.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "sveltekit-best-practices",
+      "source": ".",
+      "description": "SvelteKit and Svelte 5 done right. Runes ($state, $derived, $effect), load functions, form actions, SSR patterns, and modern Svelte your AI agent should follow."
+    }
+  ]
+}

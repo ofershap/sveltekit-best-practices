@@ -1,0 +1,13 @@
+{
+  "name": "sveltekit-best-practices",
+  "displayName": "SvelteKit Best Practices",
+  "version": "0.1.0",
+  "description": "SvelteKit and Svelte 5 done right. Runes ($state, $derived, $effect), load functions, form actions, SSR patterns, and modern Svelte your AI agent should follow.",
+  "author": {
+    "name": "Ofer Shapira",
+    "url": "https://github.com/ofershap"
+  },
+  "homepage": "https://github.com/ofershap/sveltekit-best-practices",
+  "repository": "https://github.com/ofershap/sveltekit-best-practices",
+  "license": "MIT"
+}
