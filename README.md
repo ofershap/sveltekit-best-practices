@@ -1,23 +1,15 @@
 # SvelteKit Best Practices
 
-SvelteKit and Svelte 5 done right. Runes ($state, $derived, $effect), load functions, form actions,
-SSR patterns, and modern Svelte your AI agent should follow.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Skills](https://img.shields.io/badge/skills.sh-sveltekit--best--practices-blue)](https://skills.sh/ofershap/sveltekit-best-practices/sveltekit-best-practices)
+
+SvelteKit and Svelte 5 done right. Runes (`$state`, `$derived`, `$effect`), `$props()`, `$bindable()`, load functions, form actions, `+page.server.ts`, `+layout.server.ts`, `hooks.server.ts`, snippets, and SSR patterns.
+
+> AI coding assistants generate Svelte 4 code - `writable()` stores, `export let` props, `$:` reactive declarations, `onMount` data fetching. Svelte 5 replaced all of these with runes. This plugin stops your agent from writing dead syntax.
 
 ## Install
 
-### Cursor IDE
-
-```
-/add-plugin sveltekit-best-practices
-```
-
-### Claude Code
-
-```
-/plugin install sveltekit-best-practices
-```
-
-### Skills only (any agent)
+### Cursor / Claude Code / Windsurf
 
 ```bash
 npx skills add ofershap/sveltekit-best-practices/sveltekit-best-practices
@@ -27,31 +19,37 @@ Or copy `skills/` into your `.cursor/skills/` or `.claude/skills/` directory.
 
 ## What's Included
 
-### Skills
+| Type | Name | Description |
+|------|------|-------------|
+| Skill | `sveltekit-best-practices` | 14 rules for Svelte 5 runes, load functions, form actions, SSR, and more |
+| Rule | `best-practices` | Always-on behavioral rule that enforces Svelte 5 / SvelteKit patterns |
+| Command | `/audit` | Scan your codebase for Svelte 4 anti-patterns |
 
-- **sveltekit-best-practices** - SvelteKit and Svelte 5 done right. Runes, load functions, form
-  actions, SSR patterns, and modern Svelte.
+## What Agents Get Wrong
 
-### Rules
+| What the agent writes (Svelte 4) | What Svelte 5 uses |
+|-----------------------------------|--------------------|
+| `writable()`, `readable()` stores | `$state()`, `$derived()` runes |
+| `export let name` for props | `let { name } = $props()` |
+| `$: doubled = count * 2` | `let doubled = $derived(count * 2)` |
+| `$: { sideEffect() }` | `$effect(() => { sideEffect() })` |
+| Data fetching in `onMount` | `load()` in `+page.server.ts` |
+| API routes for form mutations | Form actions in `+page.server.ts` |
+| `<slot />` for children | Snippets with `{@render children()}` |
+| `$app/stores` for page data | `$app/state` (Svelte 5) |
 
-- **best-practices** - Always-on rules that enforce current SvelteKit / Svelte 5 patterns
+## Related Plugins
 
-### Commands
+- [tailwind-best-practices](https://github.com/ofershap/tailwind-best-practices) - Tailwind CSS v4 patterns
+- [typescript-best-practices](https://github.com/ofershap/typescript-best-practices) - TypeScript 5.x strict patterns
+- [vibe-guard](https://github.com/ofershap/vibe-guard) - Security guardrails for SvelteKit endpoints
 
-- `/audit` - Scan your codebase for SvelteKit / Svelte 5 anti-patterns
+## Author
 
-## Why This Plugin?
+[![Made by ofershap](https://gitshow.dev/api/card/ofershap)](https://gitshow.dev/ofershap)
 
-AI agents are trained on data that includes outdated Svelte 4 patterns. This plugin ensures your
-agent uses current Svelte 5 and SvelteKit best practices:
-
-- Agents generate Svelte 4 stores (writable, readable) instead of Svelte 5 runes
-  ($state, $derived,
-  $effect)
-- Agents use export let instead of $props() and $bindable()
-- Agents use $: reactive declarations instead of $derived and $effect
-- Agents fetch data in onMount instead of using load functions in +page.server.ts
-- Agents create API routes for form submissions instead of using form actions
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/ofershap)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github&logoColor=white)](https://github.com/ofershap)
 
 ## License
 
