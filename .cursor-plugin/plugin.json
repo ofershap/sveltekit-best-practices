@@ -11,6 +11,16 @@
   "homepage": "https://github.com/ofershap/sveltekit-best-practices",
   "repository": "https://github.com/ofershap/sveltekit-best-practices",
   "license": "MIT",
-  "keywords": ["sveltekit", "svelte", "svelte5", "runes", "best-practices", "ssr", "cursor-plugin", "claude-code", "ai-agent"],
+  "keywords": [
+    "sveltekit",
+    "svelte",
+    "svelte5",
+    "runes",
+    "best-practices",
+    "ssr",
+    "cursor-plugin",
+    "claude-code",
+    "ai-agent"
+  ],
   "logo": "assets/logo.svg"
 }

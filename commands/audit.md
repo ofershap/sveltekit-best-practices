@@ -6,6 +6,7 @@ description: Audit the current codebase for SvelteKit / Svelte 5 best practice v
 Scan the current project for SvelteKit / Svelte 5 anti-patterns and best practice violations.
 
 For each issue found:
+
 1. Show the file and line
 2. Explain what's wrong
 3. Show the correct pattern

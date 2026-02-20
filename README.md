@@ -1,6 +1,7 @@
 # SvelteKit Best Practices
 
-SvelteKit and Svelte 5 done right. Runes ($state, $derived, $effect), load functions, form actions, SSR patterns, and modern Svelte your AI agent should follow.
+SvelteKit and Svelte 5 done right. Runes ($state, $derived, $effect), load functions, form actions,
+SSR patterns, and modern Svelte your AI agent should follow.
 
 ## Install
 
@@ -28,7 +29,8 @@ Or copy `skills/` into your `.cursor/skills/` or `.claude/skills/` directory.
 
 ### Skills
 
-- **sveltekit-best-practices** - SvelteKit and Svelte 5 done right. Runes, load functions, form actions, SSR patterns, and modern Svelte.
+- **sveltekit-best-practices** - SvelteKit and Svelte 5 done right. Runes, load functions, form
+  actions, SSR patterns, and modern Svelte.
 
 ### Rules
 
@@ -40,9 +42,12 @@ Or copy `skills/` into your `.cursor/skills/` or `.claude/skills/` directory.
 
 ## Why This Plugin?
 
-AI agents are trained on data that includes outdated Svelte 4 patterns. This plugin ensures your agent uses current Svelte 5 and SvelteKit best practices:
+AI agents are trained on data that includes outdated Svelte 4 patterns. This plugin ensures your
+agent uses current Svelte 5 and SvelteKit best practices:
 
-- Agents generate Svelte 4 stores (writable, readable) instead of Svelte 5 runes ($state, $derived, $effect)
+- Agents generate Svelte 4 stores (writable, readable) instead of Svelte 5 runes
+  ($state, $derived,
+  $effect)
 - Agents use export let instead of $props() and $bindable()
 - Agents use $: reactive declarations instead of $derived and $effect
 - Agents fetch data in onMount instead of using load functions in +page.server.ts

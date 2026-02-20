@@ -8,7 +8,17 @@
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
-  "keywords": ["sveltekit", "svelte", "svelte5", "runes", "best-practices", "ssr", "cursor-plugin", "claude-code", "ai-agent"],
+  "keywords": [
+    "sveltekit",
+    "svelte",
+    "svelte5",
+    "runes",
+    "best-practices",
+    "ssr",
+    "cursor-plugin",
+    "claude-code",
+    "ai-agent"
+  ],
   "author": {
     "name": "Ofer Shapira",
     "url": "https://github.com/ofershap"
