@@ -41,9 +41,15 @@ function parseFrontmatter(content) {
 
   const block = normalized.slice(4, closing);
   const fields = {};
+  let currentKey = null;
   for (const line of block.split("\n")) {
-    const match = line.match(/^(\w[\w-]*):\s*(.+)$/);
-    if (match) fields[match[1]] = match[2].trim();
+    const match = line.match(/^(\w[\w-]*):\s*(.*)$/);
+    if (match) {
+      currentKey = match[1];
+      fields[currentKey] = match[2].trim();
+    } else if (currentKey && /^\s+\S/.test(line)) {
+      fields[currentKey] += " " + line.trim();
+    }
   }
   return fields;
 }
