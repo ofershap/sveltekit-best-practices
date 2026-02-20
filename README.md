@@ -50,6 +50,10 @@ Or copy `skills/` into your `.cursor/skills/` or `.claude/skills/` directory.
   5.x strict patterns
 - [vibe-guard](https://github.com/ofershap/vibe-guard) - Security guardrails for SvelteKit endpoints
 
+---
+
+If this helped your workflow, a star helps others find it.
+
 ## Author
 
 [![Made by ofershap](https://gitshow.dev/api/card/ofershap)](https://gitshow.dev/ofershap)
