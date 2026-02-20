@@ -1,7 +1,7 @@
 # SvelteKit Best Practices
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Skills](https://img.shields.io/badge/skills.sh-sveltekit--best--practices-blue)](https://skills.sh/ofershap/sveltekit-best-practices/sveltekit-best-practices)
+[![Skills](https://img.shields.io/badge/skills.sh-sveltekit--best--practices-blue)](https://skills.sh/ofershap/sveltekit-best-practices)
 
 SvelteKit and Svelte 5 done right. Runes (`$state`, `$derived`, `$effect`), `$props()`,
 `$bindable()`, load functions, form actions, `+page.server.ts`, `+layout.server.ts`,
@@ -16,7 +16,7 @@ SvelteKit and Svelte 5 done right. Runes (`$state`, `$derived`, `$effect`), `$pr
 ### Cursor / Claude Code / Windsurf
 
 ```bash
-npx skills add ofershap/sveltekit-best-practices/sveltekit-best-practices
+npx skills add ofershap/sveltekit-best-practices
 ```
 
 Or copy `skills/` into your `.cursor/skills/` or `.claude/skills/` directory.
